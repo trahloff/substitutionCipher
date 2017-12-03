@@ -1,4 +1,4 @@
-package com.example.trahloff.substitutioncipher;
+package com.example.trahloff.substitution;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.trahloff.substitutioncipher", appContext.getPackageName());
+        assertEquals("com.example.trahloff.substitution", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.trahloff.substitutioncipher;
+package com.example.trahloff.substitution;
 
 import org.junit.Test;
 

@@ -4,6 +4,21 @@
     android:layout_width="match_parent" android:layout_height="match_parent">
 
     <EditText
+        android:id="@+id/txt_text"
+        style="@android:style/Widget.Material.Light.AutoCompleteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/txt_key"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="148dp"
+        android:ems="10"
+        android:hint="input"
+        android:inputType="textCapCharacters|textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:text="ABC" />
+
+    <EditText
         android:id="@+id/txt_key"
         style="@android:style/Widget.Material.Light.AutoCompleteTextView"
         android:layout_width="wrap_content"
@@ -15,21 +30,8 @@
         android:hint="key (26 characters)"
         android:inputType="textCapCharacters|textPersonName"
         android:selectAllOnFocus="false"
-        android:singleLine="false" />
-
-    <EditText
-        android:id="@+id/txt_text"
-        style="@android:style/Widget.Material.Light.AutoCompleteTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/txt_key"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="148dp"
-        android:ems="10"
-        android:hint="input"
-        android:inputType="textPersonName"
-        android:selectAllOnFocus="false"
-        android:singleLine="false" />
+        android:singleLine="false"
+        android:text="QWERTZUIOPASDFGHJKLYXCVBNM" />
 
     <Button
         android:id="@+id/bt_go"
@@ -38,7 +40,7 @@
         android:layout_below="@+id/txt_key"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
-        android:onClick="cipher"
+        android:onClick="runCipher"
         android:text="Go" />
 
     <TextView
@@ -47,16 +49,19 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/bt_go"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="57dp" />
+        android:layout_marginTop="57dp"
+        android:textAlignment="center"
+        android:textStyle="bold" />
 
     <Switch
-        android:id="@+id/switch_mode"
+        android:id="@+id/swch_mode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/bt_go"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="13dp"
         android:checked="true"
-        android:text="Mode: Encryption" />
+        android:onClick="changeMode"
+        android:text="Mode: Encryption " />
 
 </RelativeLayout>
